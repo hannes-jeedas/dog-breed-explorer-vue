@@ -27,4 +27,25 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.dogbreed {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.category {
+  margin-top: 50px;
+}
+.catdesc {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.dogbreed .h1, h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+img {
+  width: 40%;
+}
 </style>
