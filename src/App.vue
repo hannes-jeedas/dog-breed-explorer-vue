@@ -48,4 +48,27 @@
 img {
   width: 40%;
 }
+
+header {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.headerimage {
+  width: 50%;
+  height: 60%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+ }
 </style>
