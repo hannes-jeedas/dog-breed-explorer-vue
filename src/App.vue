@@ -50,11 +50,11 @@ img {
 }
 
 header {
-  /* width: 100%;
-  height: 150px; */
+  width: 100%;
+  height: 150px;
   text-align: center;
-  /* margin-left: auto;
-  margin-top: auto; */
+  margin-left: auto;
+  margin-top: auto;
   border: #2c3e50;
 }
 
