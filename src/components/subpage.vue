@@ -16,10 +16,13 @@
                         </div>
                         <div class="col-8">
                             <div class=catdesc>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? 
+                                    Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
@@ -98,17 +101,14 @@
                             </div>
                         </div>
                     </div>
-
-                    
                 </div>
-                
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import { ref } from "vue";
+// import { ref } from "vue";
 
 // export default {
 //     name: "TodoList",
@@ -131,4 +131,4 @@ import { ref } from "vue";
 //         };
 //     },
 // };
-// </script>
+</script>
