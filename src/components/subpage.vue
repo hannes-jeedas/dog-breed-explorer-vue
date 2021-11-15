@@ -16,7 +16,7 @@
                                 <h2>PÄRITOLU</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? 
@@ -33,7 +33,7 @@
                                 <h2>ISELOOM</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
@@ -47,7 +47,7 @@
                                 <h2>TERVIS</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
@@ -61,7 +61,7 @@
                                 <h2>LIIKUMINE</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
@@ -75,7 +75,7 @@
                                 <h2>TOITUMINE</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
@@ -89,7 +89,7 @@
                                 <h2>HOOLDAMINE</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
@@ -103,7 +103,7 @@
                                 <h2>PERESÕBRALIK</h2>
                             </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-6">
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
                             </div>
