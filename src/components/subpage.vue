@@ -1,11 +1,13 @@
 <template>
     <div>
-        <div class="row">
+<!-- Dogbreed name and picture -->
+        <div class="row"> 
             <div class="col">
                 <div class=dogbreed>
                     <h1>JASMIN</h1>
                     <img src="https://dogtime.com/assets/uploads/2011/01/file_23146_dalmatian-460x290.jpg" alt="koera pilt">
                 </div>
+<!-- 1st category and description -->
                 <div>
                     <div class="row justify-content-center">
                         <div class="col-4">
@@ -18,11 +20,12 @@
                             <div class=catdesc>
                                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Molestias in numquam dicta ratione nulla aliquam inventore facilis cum blanditiis? 
-                                    Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! </p>
+                                    Qui quae corrupti sunt praesentium facilis, maxime temporibus fugiat est aspernatur! 
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
+<!-- 2nd category and description -->
                     <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
@@ -36,6 +39,7 @@
                             </div>
                         </div>
                     </div>
+<!-- 3rd category and description -->
                     <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
@@ -49,6 +53,7 @@
                             </div>
                         </div>
                     </div>
+<!-- 4th category and description -->
                     <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
@@ -62,6 +67,7 @@
                             </div>
                         </div>
                     </div>
+<!-- 5th category and description -->
                      <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
@@ -75,6 +81,7 @@
                             </div>
                         </div>
                     </div>
+<!-- 6th category and description -->
                      <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
@@ -88,6 +95,7 @@
                             </div>
                         </div>
                     </div>
+<!-- 7th category and description -->
                      <div class="row justify-content-center">
                         <div class="col-4">
                             <div class=category>
