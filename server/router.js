@@ -9,6 +9,8 @@ router.get("/calc", function (req, res) {
   res.send(String(result)); // String
 });
 // request === req ja response === res
+//let movieData = require('./moviedata.json');
+
 router.get("/get-todos", function (request, response) {
   const exampleTodos = [
     {

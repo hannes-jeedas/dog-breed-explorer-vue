@@ -55,22 +55,31 @@ header {
   text-align: center;
   margin-left: auto;
   margin-top: auto;
-  border: #2c3e50;
+  background-color: powderblue;
+  vertical-align: middle;
+  line-height: 150px;  
 }
 
 .headerimage {
-  width: 40%;
+  width: 30%;
   height: 40%;
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 150px;
   width: 100%;
-  color: #2c3e50;
   text-align: center;
- }
+  background-color: powderblue;
+  height: 70px;
+  vertical-align: middle;
+  line-height: 70px;  
+}
+
+body {
+  overflow-x: hidden; 
+}
+
 </style>
