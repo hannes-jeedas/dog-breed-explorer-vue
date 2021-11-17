@@ -78,4 +78,8 @@ footer {
   line-height: 70px;  
 }
 
+body {
+  overflow-x: hidden; 
+}
+
 </style>
