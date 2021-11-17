@@ -1,5 +1,5 @@
 <template>
-  <div class="home container">
+  <div class="home">
     <Header msg="header" />
     <Landpage msg="landpage" />
     <Footer msg="footer" />
@@ -14,9 +14,9 @@ import Footer from "@/components/footer.vue";
 export default {
   name: "Home",
   components: {
-    Footer,
-    Landpage,
     Header,
+    Landpage,
+    Footer,
   },
 };
 </script>
