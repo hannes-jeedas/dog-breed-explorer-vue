@@ -55,6 +55,7 @@ header {
   text-align: center;
   margin-left: auto;
   margin-top: auto;
+  margin-bottom: 15px;
   background-color: powderblue;
   vertical-align: middle;
   line-height: 150px;  
