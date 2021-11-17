@@ -1,21 +1,23 @@
 <template>
   <div class="about">
     <!-- <h1>This is an about page</h1> -->
-    <Subpage title="SUBPAGE"/>
+    <Header title="header"/>
+    <Subpage title="Subpage"/>
+    <Footer title="footer"/>
   </div>
 </template>
 
 <script>
-import Subpage from "@/components/Subpage.vue";
-import footer from "@/components/footer.vue";
-import header from "@/components/header.vue";
+import Header from "@/components/header.vue";
+import Subpage from "@/components/subpage.vue";
+import Footer from "@/components/footer.vue";
 
 export default {
   name: "About",
   components: {
+    Header,
     Subpage,
-    footer,
-    header,
+    Footer
   },
 };
 </script>
