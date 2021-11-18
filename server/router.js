@@ -1,6 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
+
+//let movieData = require('./moviedata.json');
+router.get("/get-breeds", function (breeds_request, breeds_response) {
+  const breeds = 'test';
+
+  breeds_response.send(breeds);
+});
+
 router.get("/calc", function (req, res) {
   const a = 4;
   const b = 4;
@@ -9,7 +17,6 @@ router.get("/calc", function (req, res) {
   res.send(String(result)); // String
 });
 // request === req ja response === res
-//let movieData = require('./moviedata.json');
 
 router.get("/get-todos", function (request, response) {
   const exampleTodos = [
