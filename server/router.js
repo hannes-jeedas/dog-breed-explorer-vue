@@ -4,7 +4,7 @@ const router = express.Router();
 
 //let movieData = require('./moviedata.json');
 router.get("/get-breeds", function (breeds_request, breeds_response) {
-  const breeds = 'test';
+  const breeds = require('./breeds.json');
 
   breeds_response.send(breeds);
 });
