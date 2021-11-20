@@ -1,6 +1,5 @@
 <template>
 <!-- Search -->
-
     <div>
         <div class="row">
             <div class="col-3">
@@ -70,7 +69,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <button type="button" class="btn btn-primary">Search</button> -->
+                <button type="button" class="btn btn-primary">Search</button>
             </div>
             <div>
                 <div class="row justify-content-end">
