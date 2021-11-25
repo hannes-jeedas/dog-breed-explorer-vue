@@ -567,7 +567,7 @@
         <button type="button" class="btn btn-primary">Search</button>
         <div class="col-3">
           <ul class="list-group mb-3">
-            <li v-for="item in breeds" :key="item.Breed">
+            <li v-for="item in breeds" :key="item.Breed" class="col">
               {{ item.Breed }}
               <img
                 :src="require(`./pics/${item.Breed}.jpg`)"
@@ -577,39 +577,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- <div>
-        <div class="row justify-content-end"> -->
-
-      <!-- <div class="col-3">
-            <div class="dog">
-              <img
-                src="https://dogtime.com/assets/uploads/2011/01/file_23146_dalmatian-460x290.jpg"
-                alt="koera pilt"
-              />
-              <h1>JASMIN</h1>
-            </div>
-          </div> -->
-      <!-- <div class="col-3">
-            <div class="dog">
-              <img
-                src="https://dogtime.com/assets/uploads/2011/01/file_23146_dalmatian-460x290.jpg"
-                alt="koera pilt"
-              />
-              <h1>JASMIN</h1>
-            </div>
-          </div> -->
-      <!-- <div class="col-3">
-            <div class="dog">
-              <img
-                src="https://dogtime.com/assets/uploads/2011/01/file_23146_dalmatian-460x290.jpg"
-                alt="koera pilt"
-              />
-              <h1>JASMIN</h1>
-            </div>
-          </div> -->
-      <!-- </div>
-      </div> -->
     </div>
   </div>
 </template>
