@@ -1,5 +1,4 @@
-﻿{
-    "Dog breeds": [
+﻿[
         {
             "Breed": "Afganistani hurt",
             "Short Description": "Suursuguse ja väärika välimusega afgaani hurt seisab uhkelt ja elegantselt, tema pikk ja läikiv kasukas on tema uhkeim ehe. See koeratõug on suur, täiskasvanud isase koera turjakõrgus on 68–74 cm, emasel 63–69 cm. Uhke kasuka värv varieerub mustast hõbedaseni, esineda võivad kõik värvid, mustrid ja kombinatsioonid, mis sinna vahele mahuvad. Keskmine kaal on 25 kg ringis, ligikaudu 20–27 kg vahel, olenevalt koera kehaehitusest ja soost.",
@@ -2256,5 +2255,4 @@
             "Maintenance": "Lemmikloomast Yorkshire'i terjerit tuleks igapäevaselt harja ja kammiga hooldada ning kõik pusad eemaldada. Pats tuleks lahti võtta, läbi harjata ja uuesti teha. Kui jätate patsikummi mitmeks päevaks koerale pähe, hävitab see tema karva. Sabaalust ja selle ümber asuvat karva tuleks kontrollida, et sinna poleks väljaheiteid kinni jäänud. Ka tema hambaid tuleks igapäevaselt pesta, sest väikestes suudes lagunevad hambad kiiremini. Kui oled oma koera igapäevase hooldamise selgeks saanud, ei tohiks see võtta kauem kui 15 minutit.",
             "Children": "Kuigi paljude koerte kohta on arvatud, et nad saavad lastega loomuldasa hästi läbi, tuleb kõiki koeri ja lapsi õpetada omavahel suhtlema, üksteist austama ning turvaliselt koos elama. Ja ka sel juhul ei tohiks koeri väikelastega kunagi üksi jätta, vaid täiskasvanud peaksid neil kogu aeg silma peal hoidma."
         }
-    ]
-}
+ ]

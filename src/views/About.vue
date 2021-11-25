@@ -1,9 +1,9 @@
 <template>
   <div class="about">
     <!-- <h1>This is an about page</h1> -->
-    <Header title="header"/>
-    <Subpage title="Subpage"/>
-    <Footer title="footer"/>
+    <Header title="header" />
+    <Subpage title="Subpage" />
+    <Footer title="footer" />
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   components: {
     Header,
     Subpage,
-    Footer
+    Footer,
   },
 };
 </script>

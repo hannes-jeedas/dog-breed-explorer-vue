@@ -40,9 +40,10 @@
   text-align: left;
 }
 
-.dogbreed .h1, h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+.dogbreed .h1,
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 img {
@@ -58,7 +59,7 @@ header {
   margin-bottom: 15px;
   background-color: powderblue;
   vertical-align: middle;
-  line-height: 150px;  
+  line-height: 150px;
 }
 
 .headerimage {
@@ -76,11 +77,10 @@ footer {
   background-color: powderblue;
   height: 70px;
   vertical-align: middle;
-  line-height: 70px;  
+  line-height: 70px;
 }
 
 body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
-
 </style>
