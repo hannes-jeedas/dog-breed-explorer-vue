@@ -3,14 +3,13 @@
     <Header msg="header" />
     <div class="row">
       <div class="col-2">
-    <Searching msg="Searching" />
-    </div>
-    <div class="col-10">
-    <Breeds msg="Breeds" />
-    </div>
+        <Searching msg="Searching" />
+      </div>
+      <div class="col-10">
+        <Breeds msg="Breeds" />
+      </div>
     </div>
     <Footer msg="footer" />
-    
   </div>
 </template>
 
