@@ -1,16 +1,20 @@
 <template>
-  <!-- Search -->
-  <div>
-    <div class="col-9">
-      <ul class="list-group container">
-        <li class="list-group-item" v-for="item in breeds" :key="item.Breed">
-          <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" />
-          <br />
-          {{ item.Breed }}
-        </li>
-      </ul>
-    </div>
+  <!-- <div class="container"> -->
+  <div class="row" v-for="i in Math.ceil(breeds.length / 3)" :key="i">
+    <!-- {{ i }} -->
+    <ul class="list-group list-group-horizontal align-items-center text-center">
+      <li
+        class="list-group-item col-4 border-0 m-3"
+        v-for="item in breeds.slice((i - 1) * 3, i * 3)"
+        :key="item.Breed"
+      >
+        <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" />
+        <br />
+        <h3>{{ item.Breed }}</h3>
+      </li>
+    </ul>
   </div>
+  <!-- </div> -->
 </template>
 
 <script>
