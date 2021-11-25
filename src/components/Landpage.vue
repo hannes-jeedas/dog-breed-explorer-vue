@@ -1,14 +1,15 @@
 <template>
+  <!-- Search -->
   <div>
     <div class="row">
-      <div class="col-3">
-        <ul class="list-group mb-3">
-          <li v-for="item in breeds" :key="item.Breed">
+      <div class="col-9">
+        <ul class="list-group container">
+          <li class="list-group-item" v-for="item in breeds" :key="item.Breed">
+
+            <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" />
+            <br />
             {{ item.Breed }}
-            <img
-              :src="require(`./pics/${item.Breed}.jpg`)"
-              alt="koera pilt"
-            />
+ 
           </li>
         </ul>
       </div>
