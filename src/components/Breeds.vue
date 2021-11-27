@@ -1,5 +1,5 @@
 <template>
-<!-- <h1>TEST</h1> -->
+  <!-- <h1>TEST</h1> -->
   <!-- <div class="container"> -->
   <div class="row" v-for="i in Math.ceil(breedsFromServer.length / 3)" :key="i">
     <!-- {{ i }} -->
@@ -11,9 +11,9 @@
       >
         <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
         <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
-        <img v-bind:src="`${item.Picture}`"  alt="koera pilt"  />
+        <img v-bind:src="`${item.Picture}`" alt="pilt`" />
         <br />
-        
+
         <h3>{{ item.Breed }}</h3>
       </li>
     </ul>
