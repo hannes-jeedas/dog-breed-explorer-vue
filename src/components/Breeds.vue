@@ -8,6 +8,7 @@
         class="list-group-item col-4 border-0 m-3"
         v-for="item in breedsFromServer.slice((i - 1) * 3, i * 3)"
         :key="item.Breed"
+       
       >
         <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
         <!-- <img :src=${item.Picture} alt="koera pilt" /> -->

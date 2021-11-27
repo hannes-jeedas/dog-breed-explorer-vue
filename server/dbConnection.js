@@ -7,10 +7,9 @@ mongoose.connect(
 );
 const Schema = mongoose.Schema;
 
-
 const JasminSchema = new Schema({
   Breed: { type: String },
-  Picture: { type: String },
+  // Picture: { type: String },
   // ShortDescription: { type: String },
   // Characteristics: { type: String },
   // Origin: { type: String },
@@ -22,10 +21,8 @@ const JasminSchema = new Schema({
   // Children: { type: String },
 });
 
-
 const Jasmin = mongoose.model("jasmins", JasminSchema);
 
 module.exports = {
-
   Jasmin,
 };
