@@ -6,5 +6,9 @@ router.get("/get-breeds", async function (breeds_request, breeds_response) {
   const result = await Jasmin.find();
   breeds_response.send(result);
 });
-
+router.get("/get-breed/:id", async function (request, response) {
+  const result = await Jasmin.findOne({ _id: request.params.id });
+  console.log(result);
+  response.send(result);
+});
 module.exports = router;
