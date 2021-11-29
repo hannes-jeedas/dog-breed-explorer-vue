@@ -8,17 +8,21 @@
         class="list-group-item col-4 border-0 m-3"
         v-for="item in breedsFromServer.slice((i - 1) * 3, i * 3)"
         :key="item.Breed"
-       
-      ><a href="about" class="text-decoration-none text-dark">
-        <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
-        <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
-        <img v-bind:src="`${item.Picture}`" alt="pilt`" />
-        <br />
+      >
+        <a
+          href="about"
+          class="text-decoration-none text-dark"
+          @click="getBreed(item._id)"
+        >
+          <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
+          <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
+          <img v-bind:src="`${item.Picture}`" alt="pilt`" />
+          <br />
 
-        <h3> 
-          {{ item.Breed }}
-          <!-- <router-link to="/About">{{ item.Breed }}</router-link> -->
-        </h3>
+          <h3>
+            {{ item.Breed }}
+            <!-- <router-link to="/About">{{ item.Breed }}</router-link> -->
+          </h3>
         </a>
       </li>
     </ul>
@@ -38,6 +42,7 @@ export default {
   // },
   setup() {
     const breedsFromServer = ref([]);
+    const singleBreed = ref({});
 
     async function getbreeds() {
       const result = await axios.get("/api/get-breeds");
@@ -45,9 +50,15 @@ export default {
       //console.log(result.data);
       //console.log("123");
     }
+    async function getBreed(id) {
+      const result = await axios.get("/api/get-breed/" + id);
+      singleBreed.value = result.data;
+      console.log(result.data);
+    }
     getbreeds();
     return {
       breedsFromServer,
+      getBreed,
     };
   },
 };
