@@ -11,72 +11,6 @@
       <br />
       <ul class="list-group" id="myList">
         <li class="list-group-item">
-          <p>Kaal (kg)</p>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked">
-              option 1</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked">
-              option 2</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked">
-              option 3</label
-            >
-          </div>
-        </li>
-        <li class="list-group-item">
-          <p>Turjakõrgus (cm)</p>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked">
-              option 1</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked">
-              option 2</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked">
-              option 3</label
-            >
-          </div>
-        </li>
-        <li class="list-group-item">
           <p>Värvus</p>
           <div class="custom-control custom-checkbox">
             <input
@@ -135,7 +69,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Kollakas</label
+              >Sinine</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -145,7 +79,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Kuldne</label
+              >Kollane</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -165,7 +99,40 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Sinine</label
+              >Kuldne</label
+            >
+          </div>
+        </li>
+        <li class="list-group-item">
+          <p>Sobivus omaniku kogemuse põhjal</p>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="defaultUnchecked"
+            />
+            <label class="custom-control-label" for="defaultUnchecked"
+              >Kogenematu</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="defaultUnchecked"
+            />
+            <label class="custom-control-label" for="defaultUnchecked"
+              >Vähese kogemusega</label
+            >
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="defaultUnchecked"
+            />
+            <label class="custom-control-label" for="defaultUnchecked"
+              >Kogenud</label
             >
           </div>
         </li>
@@ -204,23 +171,25 @@
         </li>
         <li class="list-group-item">
           <p>Allergiaohtlik koer</p>
-          <div class="custom-control custom-checkbox">
+          <div class="form-check">
             <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
+              type="radio"
+              class="form-check-input"
+              id="flexRadioDefault1"
+              name="flexRadioDefault"
             />
-            <label class="custom-control-label" for="defaultUnchecked"
+            <label class="form-check-label" for="flexRadioDefault1"
               >Jah</label
             >
           </div>
-          <div class="custom-control custom-checkbox">
+          <div class="form-check">
             <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
+              type="radio"
+              class="form-check-input"
+              id="flexRadioDefault1"
+              name="flexRadioDefault"
             />
-            <label class="custom-control-label" for="defaultUnchecked"
+            <label class="form-check-label" for="flexRadioDefault1"
               >Ei</label
             >
           </div>
@@ -279,7 +248,7 @@
           </div>
         </li>
         <li class="list-group-item">
-          <p>Tervis</p>
+          <p>Jalutuskäigu pikkus päevas</p>
           <div class="custom-control custom-checkbox">
             <input
               type="checkbox"
@@ -287,7 +256,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Terve</label
+              >30 minutit</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -297,7 +266,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Pärilikud terviseprobleemid</label
+              >1 tund</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -307,7 +276,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Vähk</label
+              >2 tundi</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -317,110 +286,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Silmahaigus</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Düsplaasia</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Südamehaigus</label
-            >
-          </div>
-        </li>
-        <li class="list-group-item">
-          <p>Karvastik</p>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Lühike</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Pikk</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Paks/Tihe</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Villane</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Õhuke</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Karm</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Sile</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Laineline</label
+              >> 2 tundi</label
             >
           </div>
         </li>
@@ -486,7 +352,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Lojaalne</label
+              >Vaikne</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -496,7 +362,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Südamlik</label
+              >Jutukas ja häälekas</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -506,7 +372,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Lõbus</label
+              >Väga häälekas</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -516,7 +382,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Rõõmsameelne</label
+              >Valvekoer</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -526,7 +392,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Umbusaldav</label
+              >Pole valvekoer</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -536,7 +402,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Ettevaatlik</label
+              >Perekoer</label
             >
           </div>
           <div class="custom-control custom-checkbox">
@@ -546,17 +412,7 @@
               id="defaultUnchecked"
             />
             <label class="custom-control-label" for="defaultUnchecked"
-              >Valvas</label
-            >
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              class="custom-control-input"
-              id="defaultUnchecked"
-            />
-            <label class="custom-control-label" for="defaultUnchecked"
-              >Kiinduv</label
+              >Sobib teiste loomadega</label
             >
           </div>
         </li>
