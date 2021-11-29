@@ -9,15 +9,17 @@
         v-for="item in breedsFromServer.slice((i - 1) * 3, i * 3)"
         :key="item.Breed"
        
-      >
+      ><a href="about">
         <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
         <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
         <img v-bind:src="`${item.Picture}`" alt="pilt`" />
         <br />
 
         <h3> 
-          <router-link to="/About">{{ item.Breed }}</router-link>
+          {{ item.Breed }}
+          <!-- <router-link to="/About">{{ item.Breed }}</router-link> -->
         </h3>
+        </a>
       </li>
     </ul>
   </div>
