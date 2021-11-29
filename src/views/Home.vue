@@ -7,7 +7,7 @@
           <Searching msg="Searching" />
         </div>
       </div>
-      <div class="col-10">
+      <div class="col-9">
         <Breeds msg="Breeds" />
       </div>
     </div>
