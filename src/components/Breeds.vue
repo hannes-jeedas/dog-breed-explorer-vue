@@ -9,7 +9,7 @@
         v-for="item in breedsFromServer.slice((i - 1) * 3, i * 3)"
         :key="item.Breed"
        
-      ><a href="about">
+      ><a href="about" class="text-decoration-none text-dark">
         <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
         <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
         <img v-bind:src="`${item.Picture}`" alt="pilt`" />
