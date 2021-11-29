@@ -15,7 +15,9 @@
         <img v-bind:src="`${item.Picture}`" alt="pilt`" />
         <br />
 
-        <h3>{{ item.Breed }}</h3>
+        <h3> 
+          <router-link to="/About">{{ item.Breed }}</router-link>
+        </h3>
       </li>
     </ul>
   </div>
