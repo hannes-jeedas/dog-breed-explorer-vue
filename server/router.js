@@ -1,40 +1,14 @@
 const express = require("express");
 const router = express.Router();
+const { Jasmin } = require("./dbConnection");
 
-
-//let movieData = require('./moviedata.json');
-router.get("/get-breeds", function (breeds_request, breeds_response) {
-  const breeds = require('./breeds.json');
-
-  breeds_response.send(breeds);
+router.get("/get-breeds", async function (breeds_request, breeds_response) {
+  const result = await Jasmin.find();
+  breeds_response.send(result);
 });
-
-router.get("/calc", function (req, res) {
-  const a = 4;
-  const b = 4;
-  const result = a + b;
-  // res.send({ result }); // Objekt
-  res.send(String(result)); // String
+router.get("/get-breed/:id", async function (request, response) {
+  const result = await Jasmin.findOne({ _id: request.params.id });
+  console.log(result);
+  response.send(result);
 });
-// request === req ja response === res
-
-router.get("/get-todos", function (request, response) {
-  const exampleTodos = [
-    {
-      title: "Vii prügi välja",
-      status: "ACTIVE",
-    },
-    {
-      title: "Tee midagi",
-      status: "ACTIVE",
-    },
-    {
-      title: "Käi poes",
-      status: "COMPLETE",
-    },
-  ];
-
-  response.send(exampleTodos);
-});
-
 module.exports = router;
