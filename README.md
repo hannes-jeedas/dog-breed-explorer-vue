@@ -4,7 +4,9 @@
 ```
 npm install
 ```
+```
 npm install @vueform/multiselect - dog breed search setup
+```
 
 ### Compiles and hot-reloads for development
 ```
