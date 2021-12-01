@@ -3,37 +3,36 @@
     <div class="row">
       <div class="col">
         <h2>{{ title }}</h2>
-
-        <ul class="list-group mb-3">
+        <ul class="feedback-group mb-3">
           <li
-            v-for="comment in commentssFromServer"
-            :key="comment"
-            class="list-group-item"
-            @click="getTodo(comment._id)"
+            v-for="feedback in feedbackFromServer"
+            :key="feedback"
+            class="feedback-group-item"
+            @click="getFeedback(feedback._id)"
           >
-            {{ comment.title }} {{ comment.status }}
+            {{ feedback.title }}
           </li>
         </ul>
       </div>
     </div>
     <div class="row">
-      <div class="col-6 commentbox">
+      <div class="col-6 feedbackbox ">
         <input
-          v-model="newComment"
+          v-model="newFeedback"
           type="text"
-          name="newComment"
+          name="newFeedback"
           class="form-control"
         />
       </div>
       <div class="row">
-        <div class="col-2 submitcomment">
-            <button @click="addComment" type="submit" class="btn btn-primary w-100">
+        <div class="col-2 submitFeedback">
+            <button @click="addFeedback" type="submit" class="btn btn-primary w-100">
             Submit
             </button>
             </div>
         </div>
     </div>
-    {{singleTodo}}
+    {{singleFeedback}}
   </div>
 </template>
 
@@ -42,32 +41,20 @@
 // import axios from "axios";
 
 // export default {
-//   name: "TodoList",
+//   name: "feedback",
 //   props: {
 //     title: String,
 //   },
 
 //   setup() {
-//     const comments = ref(["Read a book", "Go for a walk", "Eat food"]);
-//     const newComment = ref("");
-//     const commentsFromServer = ref([]);
-//     const singleTodo = red({});
+//     const feedback = ref(["Read a book", "Go for a walk", "Eat food"]);
+//     const newFeedback = ref("");
+//     const feedbackFromServer = ref([]);
+//     const singleFeedback = red({});
 
-//     async function deleteTodo() {
-//       await axios.get("/api/delete-todo" + id);
-//       await getComments();
-//     }
-
-//     async function completeTodo(id) {
-//       await axios.get("/api/update-todo" + id, {status: "COMPLETED"});
-//       await getComments();
-//     }
-
-
-
-//     async function getComments() {
+//     async function getFeedback() {
 //       const result = await axios.get("/api/get-todos");
-//       commentsFromServer.value = result.data;  // axios data tuleb alati salvestada result.data //
+//       feedbackFromServer.value = result.data;  // axios data tuleb alati salvestada result.data //
 //       console.log(result.data);
 //     }
 
@@ -77,32 +64,30 @@
 //       console.log(result.data);
 //     }
 
-//     async function addComment(){
-//       await axios.post("/api/add/comment", {
-//         title: newComment.value,
+//     async function addFeedback(){
+//       await axios.post("/api/add/feedback", {
+//         title: newFeedback.value,
 //         status: "ACTIVE",
 //       });
-//       newComment.value = "";
-//       await getComments(); // empty field after submit to todolist //
+//       newFeedback.value = "";
+//       await getFeedback(); // empty field after submit to todolist //
 //     }
 
-//     getComments();
+//     getFeedback();
 
 //     // function addNewTodo() {
-//     //   todos.value.push(newComment.value);
-//     //   newComment.value = "";
+//     //   todos.value.push(newFeedback.value);
+//     //   newFeedback.value = "";
 //     // }
 
 //     return {
-//       comment,
-//       newComment,
+//       feedback,
+//       newFeedback,
 //       addNewTodo,
-//       commentFromServer,
-//       addComment,
-//       singleTodo,
-//       getTodo,
-//       deleteTodo,
-//       completeTodo,
+//       feedbackFromServer,
+//       addFeedback,
+//       singlefeedback,
+//       getFeedback,
 //     };
 //   },
 // };

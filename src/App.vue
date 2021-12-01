@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/About">Subpage</router-link>
   </div>
-  <router-view />
+  <router-view /> 
 </template>
 
 <style>
@@ -75,6 +75,10 @@ header {
 .headerimage {
   width: 20%;
   height: 100%;
+}
+
+.row {
+    justify-content: center;
 }
 
 footer {
