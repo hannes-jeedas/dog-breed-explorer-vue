@@ -29,7 +29,7 @@
 <script>
 import { ref } from "vue";
 import axios from "axios";
-import router from "./../router"
+import router from "./../router";
 //import breedsData from "./breeds.json";
 export default {
   // data() {
@@ -44,16 +44,14 @@ export default {
     async function getbreeds() {
       const result = await axios.get("/api/get-breeds");
       breedsFromServer.value = result.data;
-      //console.log(result.data);
-      //console.log("123");
     }
     async function getBreed(id) {
       const result = await axios.get("/api/get-breed/" + id);
       singleBreed.value = result.data;
       console.log(result.data);
     }
-    function gotoabout(id){
-router.push({name:"About",params:{id:id}})
+    function gotoabout(id) {
+      router.push({ name: "About", params: { id: id } });
     }
     getbreeds();
     return {

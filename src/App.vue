@@ -3,11 +3,10 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/About">Subpage</router-link>
   </div>
-  <router-view /> 
+  <router-view />
 </template>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,12 +29,12 @@
 }
 
 .multiselect-dropdown {
-    display: none;
-    font-size: 15px;
+  display: none;
+  font-size: 15px;
 }
 /* Searching categories and options text */
 .list-group {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .dogbreed {
@@ -78,7 +77,7 @@ header {
 }
 
 .row {
-    justify-content: center;
+  justify-content: center;
 }
 
 footer {

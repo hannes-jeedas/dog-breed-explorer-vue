@@ -4,7 +4,8 @@
     <div class="row">
       <div class="col">
         <div class="dogbreed">
-          <h1>JASMIN</h1>
+          <!-- <h1>JASMIN</h1> -->
+          <h1>{{ singleBreed.Breed }}</h1>
           <img
             src="https://dogtime.com/assets/uploads/2011/01/file_23146_dalmatian-460x290.jpg"
             alt="koera pilt"
@@ -21,11 +22,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Origin }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -40,11 +41,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Nature }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -59,11 +60,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Health }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -78,11 +79,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Movement }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -97,11 +98,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Nutrition }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -116,11 +117,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Maintenance }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -135,11 +136,11 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p>{{ singleBreed.Children }}
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestias in numquam dicta ratione nulla aliquam inventore
                   facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur!
+                  facilis, maxime temporibus fugiat est aspernatur! -->
                 </p>
               </div>
             </div>
@@ -152,14 +153,25 @@
 
 <script>
 import { useRoute } from "vue-router";
-export default{
-  setup()
-  {
-    const route= useRoute()
-    console.log(route.params.id)
-    return {}
-  }
-  
+import { ref } from "vue";
+import axios from "axios";
+export default {
+  setup() {
+    const route = useRoute();
+    const singleBreed = ref({});
+    console.log(route.params.id);
 
-}
+    async function getBreed(id) {
+      const result = await axios.get("/api/get-breed/" + route.params.id);
+      singleBreed.value = result.data;
+      // console.log(result.data);
+      console.log(id);
+    }
+    getBreed();
+    return {
+      singleBreed,
+      getBreed,
+    };
+  },
+};
 </script>

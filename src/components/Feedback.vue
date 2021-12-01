@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-6 feedbackbox ">
+      <div class="col-6 feedbackbox">
         <input
           v-model="newFeedback"
           type="text"
@@ -26,17 +26,22 @@
       </div>
       <div class="row">
         <div class="col-2 submitFeedback">
-            <button @click="addFeedback" type="submit" class="btn btn-primary w-100">
+          <button
+            @click="addFeedback"
+            type="submit"
+            class="btn btn-primary w-100"
+          >
             Submit
-            </button>
-            </div>
+          </button>
         </div>
+      </div>
     </div>
-    {{singleFeedback}}
+    {{ singleFeedback }}
   </div>
 </template>
 
-// <script>
+//
+<script>
 // import { ref } from "Jasmin";
 // import axios from "axios";
 
@@ -91,6 +96,5 @@
 //     };
 //   },
 // };
-// </script>
-
-
+//
+</script>
