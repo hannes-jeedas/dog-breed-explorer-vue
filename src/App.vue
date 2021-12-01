@@ -7,6 +7,7 @@
 </template>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +27,15 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.multiselect-dropdown {
+    display: none;
+    font-size: 15px;
+}
+/* Searching categories and options text */
+.list-group {
+    font-size: 15px;
 }
 
 .dogbreed {
