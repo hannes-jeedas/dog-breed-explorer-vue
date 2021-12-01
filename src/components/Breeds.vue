@@ -9,11 +9,7 @@
         v-for="item in breedsFromServer.slice((i - 1) * 3, i * 3)"
         :key="item.Breed"
       >
-        <a
-          href="about"
-          class="text-decoration-none text-dark"
-          @click="getBreed(item._id)"
-        >
+        <a class="text-decoration-none text-dark" @click="gotoabout(item._id)">
           <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
           <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
           <img v-bind:src="`${item.Picture}`" alt="pilt`" />
@@ -33,6 +29,7 @@
 <script>
 import { ref } from "vue";
 import axios from "axios";
+import router from "./../router"
 //import breedsData from "./breeds.json";
 export default {
   // data() {
@@ -55,10 +52,14 @@ export default {
       singleBreed.value = result.data;
       console.log(result.data);
     }
+    function gotoabout(id){
+router.push({name:"About",params:{id:id}})
+    }
     getbreeds();
     return {
       breedsFromServer,
       getBreed,
+      gotoabout,
     };
   },
 };

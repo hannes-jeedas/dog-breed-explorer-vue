@@ -151,27 +151,15 @@
 </template>
 
 <script>
-// import { ref } from "vue";
+import { useRoute } from "vue-router";
+export default{
+  setup()
+  {
+    const route= useRoute()
+    console.log(route.params.id)
+    return {}
+  }
+  
 
-// export default {
-//     name: "TodoList",
-//     props: {
-//         title: String,
-//     },
-//     setup() {
-//         const todos = ref(["Read", "Swim", "Clean", "Study", "Eat"]);
-//         const newTodo = ref("");
-
-//         function addNewtodo() {
-//             todos.value.push(newTodo.value);
-//             newTodo.value = "";
-//         }
-
-//         return {
-//             todos,
-//             newTodo,
-//             addNewtodo,
-//         };
-//     },
-// };
+}
 </script>

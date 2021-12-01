@@ -8,11 +8,7 @@
         :closeOnSelect="false"
         :searchable="true"
         :createTag="true"
-        :options="[
-          { value: 'batman', label: 'Batman' },
-          { value: 'robin', label: 'Robin' },
-          { value: 'joker', label: 'Joker' },
-        ]"
+        :options="search"
       />
       <br />
       <ul class="list-group" id="myList">
@@ -427,6 +423,7 @@
 <script>
 import { ref } from "vue";
 import Multiselect from "@vueform/multiselect";
+import axios from "axios";
 
 export default {
   components: {
@@ -434,6 +431,17 @@ export default {
   },
   setup() {
     let search = ref([]);
+    async function getbreeds() {
+      const result = await axios.get("/api/get-breeds-list");
+      search.value = result.data.map((result) => ({
+        label: result.Breed,
+        value: result._id,
+      }));
+
+      console.log(result.data);
+      //console.log("123");
+    }
+    getbreeds();
     return {
       search,
     };
