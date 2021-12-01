@@ -10,9 +10,9 @@
         :key="item.Breed"
       >
         <a class="text-decoration-none text-dark" @click="gotoabout(item._id)">
-          <!-- <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" /> -->
+          <img :src="require(`./pics/${item.Breed}.jpg`)" alt="koera pilt" />
           <!-- <img :src=${item.Picture} alt="koera pilt" /> -->
-          <img v-bind:src="`${item.Picture}`" alt="pilt`" />
+          <!-- <img v-bind:src="`${item.Picture}`" alt="pilt`" /> -->
           <br />
 
           <h3>

@@ -3,7 +3,8 @@ const router = express.Router();
 const { Jasmin } = require("./dbConnection");
 
 router.get("/get-breeds", async function (breeds_request, breeds_response) {
-  const result = await Jasmin.find({}, { Breed: 1, Picture: 1 });
+  // const result = await Jasmin.find({}, { Breed: 1, Picture: 1 });
+  const result = await Jasmin.find({}, { Breed: 1 });
   breeds_response.send(result);
 });
 router.get(
