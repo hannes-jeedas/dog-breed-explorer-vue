@@ -6,10 +6,7 @@
         <div class="dogbreed">
           <!-- <h1>JASMIN</h1> -->
           <h1>{{ singleBreed.Breed }}</h1>
-          <img
-            src="https://dogtime.com/assets/uploads/2011/01/file_23146_dalmatian-460x290.jpg"
-            alt="koera pilt"
-          />
+          <img v-bind:src="singleBreed.Picture" />
         </div>
         <!-- 1st category and description -->
         <div>
@@ -22,12 +19,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Origin }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Origin }}</p>
               </div>
             </div>
           </div>
@@ -41,12 +33,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Nature }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Nature }}</p>
               </div>
             </div>
           </div>
@@ -60,12 +47,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Health }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Health }}</p>
               </div>
             </div>
           </div>
@@ -79,12 +61,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Movement }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Movement }}</p>
               </div>
             </div>
           </div>
@@ -98,12 +75,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Nutrition }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Nutrition }}</p>
               </div>
             </div>
           </div>
@@ -117,12 +89,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Maintenance }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Maintenance }}</p>
               </div>
             </div>
           </div>
@@ -136,12 +103,7 @@
             </div>
             <div class="col-6">
               <div class="catdesc">
-                <p>{{ singleBreed.Children }}
-                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias in numquam dicta ratione nulla aliquam inventore
-                  facilis cum blanditiis? Qui quae corrupti sunt praesentium
-                  facilis, maxime temporibus fugiat est aspernatur! -->
-                </p>
+                <p>{{ singleBreed.Children }}</p>
               </div>
             </div>
           </div>
