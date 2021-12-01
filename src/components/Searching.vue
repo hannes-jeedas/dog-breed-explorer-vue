@@ -184,9 +184,7 @@
               id="flexRadioDefault1"
               name="flexRadioDefault"
             />
-            <label class="form-check-label" for="flexRadioDefault1"
-              >Jah</label
-            >
+            <label class="form-check-label" for="flexRadioDefault1">Jah</label>
           </div>
           <div class="form-check">
             <input
@@ -195,9 +193,7 @@
               id="flexRadioDefault1"
               name="flexRadioDefault"
             />
-            <label class="form-check-label" for="flexRadioDefault1"
-              >Ei</label
-            >
+            <label class="form-check-label" for="flexRadioDefault1">Ei</label>
           </div>
         </li>
         <li class="list-group-item">
@@ -429,20 +425,19 @@
 </template>
 
 <script>
-import {ref} from 'vue'
-import Multiselect from '@vueform/multiselect'
+import { ref } from "vue";
+import Multiselect from "@vueform/multiselect";
 
 export default {
   components: {
     Multiselect,
   },
- setup(){
-  let search = ref([])
-  return{
-    search
-  }
- }
-
+  setup() {
+    let search = ref([]);
+    return {
+      search,
+    };
+  },
 };
 </script>
 <!--<style>

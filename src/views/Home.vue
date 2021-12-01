@@ -2,7 +2,7 @@
   <div class="home">
     <Header msg="header" />
     <div class="row">
-      <div class="col-2 ">
+      <div class="col-2">
         <div class="container">
           <Searching msg="Searching" />
         </div>

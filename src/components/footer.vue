@@ -4,9 +4,7 @@
       <div class="col">
         <footer>
           <div class="footerinfo">
-            <small>&copy; 
-              Copyright 2021, Team Jasmin
-            </small>
+            <small>&copy; Copyright 2021, Team Jasmin </small>
           </div>
         </footer>
       </div>
