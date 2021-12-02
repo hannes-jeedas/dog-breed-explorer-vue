@@ -435,7 +435,7 @@ export default {
       const result = await axios.get("/api/get-breeds-list");
       search.value = result.data.map((result) => ({
         label: result.Breed,
-        value: result._id,
+        value: result.Breed,
       }));
 
       console.log(result.data);
