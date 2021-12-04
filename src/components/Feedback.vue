@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-6 feedbackbox">
+      <div class="col-4 feedbackbox">
         <input
           v-model="newFeedback"
           type="text"
