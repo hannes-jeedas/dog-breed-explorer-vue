@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div class="col">
-        <h2>{{ title }}</h2>
+        <h2>{{ msg }}</h2>
         <ul class="feedback-group mb-3">
           <li
             v-for="feedback in feedbackFromServer"
@@ -10,7 +10,7 @@
             class="feedback-group-item"
             @click="getFeedback(feedback._id)"
           >
-            {{ feedback.title }}
+            {{ feedback.msg }}
           </li>
         </ul>
       </div>
@@ -19,7 +19,7 @@
       <div class="col-4 feedbackbox">
         <input
           v-model="newFeedback"
-          type="text"
+          type="msg"
           name="newFeedback"
           class="form-control"
         />
@@ -40,17 +40,16 @@
   </div>
 </template>
 
-//
 <script>
 // import { ref } from "Jasmin";
 // import axios from "axios";
 
-// export default {
-//   name: "feedback",
-//   props: {
-//     title: String,
-//   },
-
+export default {
+  name: "feedback",
+  props: {
+    msg: String,
+  },
+}
 //   setup() {
 //     const feedback = ref(["Read a book", "Go for a walk", "Eat food"]);
 //     const newFeedback = ref("");
@@ -96,5 +95,5 @@
 //     };
 //   },
 // };
-//
+
 </script>
