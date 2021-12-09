@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const { Jasmin } = require("./dbConnection");
+const { Todos } = require("./dbConnection");
+const authRoutes = require("./authenticate.router");
+
+router.use("/auth", authRoutes);
 
 router.get("/get-breeds", async function (breeds_request, breeds_response) {
   // const result = await Jasmin.find({}, { Breed: 1, Picture: 1 });
