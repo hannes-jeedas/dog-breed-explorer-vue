@@ -59,17 +59,17 @@ img {
   width: 40%;
 }
 
-header {
+.header {
+  background-image: url("https://i.ibb.co/pLPZW3H/headerpicturefinal.jpg");
+  background-size: 100% 150px;
+  background-repeat:no-repeat;
   width: 100%;
   height: 150px;
-  text-align: center;
-  margin-left: auto;
-  margin-top: auto;
   margin-bottom: 15px;
-  background-color: powderblue;
-  vertical-align: middle;
   line-height: 150px;
+  text-align: right;
 }
+
 
 .headerimage {
   width: 20%;
