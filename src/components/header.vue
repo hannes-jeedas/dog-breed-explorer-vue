@@ -2,15 +2,12 @@
   <div>
     <div class="row">
       <div class="col">
-        <header>
-          <router-link to="/">
-            <img
-              class="headerimage"
-              src="https://logos.textgiraffe.com/logos/logo-name/Jasmin-designstyle-pastel-m.png"
-              alt="Logo"
-            />
-          </router-link>
-        </header>
+        <router-link to="/">
+          <div class="header">
+            <a class="btn btn-info btn-lg" onclick="location.href='../Login';">Login</a>
+            <a class="btn btn-info btn-lg" onclick="location.href='../Register';">Register</a>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
