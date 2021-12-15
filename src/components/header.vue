@@ -4,8 +4,8 @@
       <div class="col">
         <router-link to="/">
           <div class="header">
-            <a class="btn btn-info btn-lg" onclick="location.href='../Login';">Login</a>
-            <a class="btn btn-info btn-lg" onclick="location.href='../Register';">Register</a>
+            <a class="btn btn-info btn-lg" onclick="location.href='../Login';">Logi sisse</a>
+            <a class="btn btn-info btn-lg" onclick="location.href='../Register';">Loo kasutaja</a>
           </div>
         </router-link>
       </div>
