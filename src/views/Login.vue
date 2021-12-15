@@ -6,7 +6,7 @@
     >
       <div class="col-4">
         <div class="card">
-          <h3>Login</h3>
+          <h3>Sisene</h3>
           <div class="card-body">
             <div class="form-group">
               <input
@@ -14,7 +14,7 @@
                 class="form-control"
                 name="email"
                 v-model="email"
-                placeholder="exmaple@test.ee"
+                placeholder="E-post"
               />
             </div>
             <div class="form-group">
@@ -23,11 +23,11 @@
                 class="form-control"
                 name="password"
                 v-model="password"
-                placeholder="Password"
+                placeholder="Parool"
               />
             </div>
             <button type="button" @click="login" class="btn btn-primary">
-              Login
+              Logi sisse
             </button>
           </div>
         </div>
