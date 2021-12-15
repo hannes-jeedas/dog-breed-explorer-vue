@@ -6,7 +6,7 @@
     >
       <div class="col-4">
         <div class="card">
-          <h3>Register</h3>
+          <h3>Registreeri</h3>
           <div class="card-body">
             <div class="form-group">
               <input
@@ -14,7 +14,7 @@
                 class="form-control"
                 name="email"
                 v-model="email"
-                placeholder="email@example.ee"
+                placeholder="E-post"
               />
             </div>
             <div class="form-group">
@@ -23,7 +23,7 @@
                 class="form-control"
                 name="password"
                 v-model="password"
-                placeholder="Password"
+                placeholder="Parool"
               />
             </div>
             <div class="form-group">
@@ -32,11 +32,11 @@
                 class="form-control"
                 name="password2"
                 v-model="password2"
-                placeholder="Confirm password"
+                placeholder="Korda parooli"
               />
             </div>
             <button type="button" @click="register" class="btn btn-primary">
-              Register
+              Loo kasutaja
             </button>
           </div>
         </div>
