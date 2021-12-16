@@ -13,7 +13,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>PÄRITOLU</h2>
               </div>
             </div>
@@ -27,7 +27,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>ISELOOM</h2>
               </div>
             </div>
@@ -41,7 +41,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>TERVIS</h2>
               </div>
             </div>
@@ -55,7 +55,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>LIIKUMINE</h2>
               </div>
             </div>
@@ -69,7 +69,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>TOITUMINE</h2>
               </div>
             </div>
@@ -83,7 +83,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>HOOLDAMINE</h2>
               </div>
             </div>
@@ -97,7 +97,7 @@
           <div class="row justify-content-center">
             <div class="col-4">
               <div class="category">
-                <h1>{{ msg }}</h1>
+                <!-- <h1>{{ msg }}</h1> -->
                 <h2>PERESÕBRALIK</h2>
               </div>
             </div>

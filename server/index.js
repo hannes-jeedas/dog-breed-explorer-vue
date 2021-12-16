@@ -8,7 +8,7 @@ const db = require("./dbConnection");
 const expressJwt = require("express-jwt");
 const { SECRET } = require("./config");
 
-app.use(
+app.all(
   expressJwt({ secret: SECRET, algorithms: ["HS256"] }).unless({
     path: ["/api/auth/register", "/api/auth/login", "/api/get-breeds-list", "/api/get-breeds"],
   })
