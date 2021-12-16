@@ -48,6 +48,7 @@
 import { defineComponent } from "vue";
 import { ref } from "vue";
 import axios from "axios";
+import router from "./../router";
 export default defineComponent({
   setup() {
     let email = ref("");
@@ -59,6 +60,7 @@ export default defineComponent({
           email: email.value,
           password: password.value,
         });
+        router.push("/login");
       } else {
         alert("Password are not matching!");
       }
