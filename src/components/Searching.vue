@@ -9,6 +9,7 @@
         :searchable="true"
         :createTag="false"
         :options="search"
+        @select="onselect"
       />
       <!-- {{ search }} -->
       <br />
@@ -432,11 +433,14 @@ export default {
   },
   setup() {
     let search = ref([]);
+    function onselect(event){
+      console.log(event)
+    }
     async function getbreeds() {
       const result = await axios.get("/api/get-breeds-list");
       search.value = result.data.map((result) => ({
         label: result.Breed,
-        value: result.Breed,
+        value: result._id,
       }));
 
       console.log(result.data);
@@ -445,6 +449,7 @@ export default {
     getbreeds();
     return {
       search,
+      onselect,
     };
   },
 };
