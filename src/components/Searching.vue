@@ -7,9 +7,10 @@
         mode="tags"
         :closeOnSelect="false"
         :searchable="true"
-        :createTag="true"
+        :createTag="false"
         :options="search"
       />
+      <!-- {{ search }} -->
       <br />
       <ul class="list-group" id="myList">
         <li class="list-group-item">
