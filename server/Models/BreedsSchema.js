@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+// const { comments } = require("./models/CommentsSchema");
 
 const JasminSchema = new Schema({
   Breed: { type: String },
@@ -15,17 +16,23 @@ const JasminSchema = new Schema({
   Children: { type: String },
 });
 
-const comments = new Schema({
+const commentsSchema = new Schema({
   commentator: { type: String },
   added: { type: Date },
   comment: { type: String },
 });
 
+
+
 JasminSchema.add({
-  comments: [comments],
+  comments: [commentsSchema],
 });
+
+
+const comments = mongoose.model("comments", commentsSchema);
 const Jasmin = mongoose.model("jasmins", JasminSchema);
 
 module.exports = {
   Jasmin,
+  comments,
 };
