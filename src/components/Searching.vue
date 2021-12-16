@@ -426,6 +426,7 @@
 import { ref } from "vue";
 import Multiselect from "@vueform/multiselect";
 import axios from "axios";
+import router from "./../router";
 
 export default {
   components: {
@@ -434,7 +435,9 @@ export default {
   setup() {
     let search = ref([]);
     function onselect(event){
-      console.log(event)
+      
+      router.push({ name: "About", params: { id: event } });
+      // console.log(event)
     }
     async function getbreeds() {
       const result = await axios.get("/api/get-breeds-list");
