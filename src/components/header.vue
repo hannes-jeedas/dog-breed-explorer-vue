@@ -40,15 +40,13 @@
 </template>
 
 <script>
-import router from "./../router";
 export default {
   data() {
     function clear() {
       localStorage.clear();
       //  console.log(localStorage.getItem("token"));
-       
     }
-    router.push("/");
+
     return {
       tokenexists: localStorage.getItem("token"),
       clear,
