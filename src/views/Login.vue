@@ -30,6 +30,11 @@
               Logi sisse
             </button>
           </div>
+          <div class="d-flex justify-content-between">Ei ole kasutajat?
+            <button class="btn btn-primary" id="register" @click="$router.push('/register')">
+              Registreeri
+            </button>
+            </div>
         </div>
       </div>
     </div>
