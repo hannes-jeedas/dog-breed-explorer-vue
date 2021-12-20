@@ -115,6 +115,7 @@
 
 <script>
 import { useRoute } from "vue-router";
+import router from "./../router";
 import { ref } from "vue";
 import axios from "axios";
 export default {
@@ -124,7 +125,10 @@ export default {
     console.log(route.params.id);
 
     async function getBreed(id) {
-      const result = await axios.get("/api/get-breed/" + route.params.id);
+      const result = await axios.get("/api/get-breed/" + route.params.id, {headers:{authorization:localStorage.getItem("token")}}).catch(error => {
+        console.log(error);
+        router.push("/Login")
+      });
       singleBreed.value = result.data;
       // console.log(result.data);
       console.log(id);
@@ -137,3 +141,4 @@ export default {
   },
 };
 </script>
+
