@@ -62,14 +62,13 @@ img {
 .header {
   background-image: url("https://i.ibb.co/pLPZW3H/headerpicturefinal.jpg");
   background-size: 100% 150px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 100%;
   height: 150px;
   margin-bottom: 15px;
   line-height: 150px;
   text-align: right;
 }
-
 
 .headerimage {
   width: 20%;
@@ -97,104 +96,101 @@ body {
   overflow-x: hidden;
 }
 
-
 .navbar-nav {
-    width: 100%
+  width: 100%;
 }
 
-@media(min-width:568px) {
-    .end {
-        margin-left: auto
-    }
+@media (min-width: 568px) {
+  .end {
+    margin-left: auto;
+  }
 }
 
-@media(max-width:768px) {
-    #post {
-        width: 100%
-    }
+@media (max-width: 768px) {
+  #post {
+    width: 100%;
+  }
 }
 
 #clicked {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    text-align: center;
-    width: 100%;
-    background-color: #ecb21f;
-    border-color: #a88734 #9c7e31 #846a29;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 13px
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  width: 100%;
+  background-color: #ecb21f;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 13px;
 }
 
 #post {
-    margin: 10px;
-    padding: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-    background-color: #ecb21f;
-    border-color: #a88734 #9c7e31 #846a29;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 13px;
-    width: 50%
+  margin: 10px;
+  padding: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  background-color: #ecb21f;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 13px;
+  width: 50%;
 }
 
 /* Feedback section design */
 .container-feedback {
-      padding-top: 70px;
+  padding-top: 70px;
 }
 
 .comments {
-    margin-top: 20px;
-    margin-left: 20px
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .darker {
-    border: 1px solid #ecb21f;
-    float: right;
-    border-radius: 5px;
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-top: 30px
+  border: 1px solid #ecb21f;
+  float: right;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 30px;
 }
 
 .comment {
-    border: 1px solid #ecb21f;;
-    float: left;
-    border-radius: 5px;
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-top: 10px
+  border: 1px solid #ecb21f;
+  float: left;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 10px;
 }
 
 .comment h4,
 .comment span,
 .darker h4,
 .darker span {
-    display: inline
+  display: inline;
 }
 
 h1,
 h4 {
-    font-weight: bold
+  font-weight: bold;
 }
 
-
 #align-form {
-    padding-top: 50px
+  padding-top: 50px;
 }
 
 .form-group input,
 .form-group textarea {
-    border: 1px solid #ecb21f;
-    border-radius: 12px
+  border: 1px solid #ecb21f;
+  border-radius: 12px;
 }
 
 form {
-    border: 1px solid #ecb21f;
-    border-radius: 5px;
-    padding: 20px
-    
+  border: 1px solid #ecb21f;
+  border-radius: 5px;
+  padding: 20px;
 }
 </style>

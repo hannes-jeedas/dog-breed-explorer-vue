@@ -434,10 +434,9 @@ export default {
   },
   setup() {
     let search = ref([]);
-    function onselect(event){
-      console.log(event)
+    function onselect(event) {
+      console.log(event);
       router.push({ name: "About", params: { id: event } });
-      
     }
     async function getbreeds() {
       const result = await axios.get("/api/get-breeds-list");
