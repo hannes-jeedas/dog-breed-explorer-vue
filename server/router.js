@@ -6,9 +6,13 @@ const authRoutes = require("./authenticate.router");
 
 router.use("/auth", authRoutes);
 
-router.get("/get-breeds", async function (breeds_request, breeds_response) {
-  // const result = await Jasmin.find({}, { Breed: 1, Picture: 1 });
-  const result = await Jasmin.find({}, { Breed: 1 });
+router.post("/get-breeds", async function (breeds_request, breeds_response) {
+  const options = {
+    page: breeds_request.body.page || 1,
+    limit: 12,
+    projection: { Breed: 1 },
+  };
+  const result = await Jasmin.paginate({}, options);
   breeds_response.send(result);
 });
 router.get(
