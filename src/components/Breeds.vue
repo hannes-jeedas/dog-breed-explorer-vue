@@ -41,9 +41,12 @@ export default {
     const breedsFromServer = ref([]);
     const singleBreed = ref({});
 
-    async function getbreeds() {
-      const result = await axios.get("/api/get-breeds");
-      breedsFromServer.value = result.data;
+const totalpages = ref(1)
+
+    async function getbreeds( page=1 ) {
+      const result = await axios.post("/api/get-breeds", { page });
+      breedsFromServer.value = result.data.docs;
+      totalpages.value = result.data.totalPages;
     }
     async function getBreed(id) {
       const result = await axios.get("/api/get-breed/" + id);
@@ -62,3 +65,4 @@ export default {
   },
 };
 </script>
+
