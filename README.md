@@ -16,6 +16,9 @@ npm install express-jwt - installing JWT tokens
 ```
 npm run serve - front-end startup 
 ```
+```
+npm install mongoose-paginate-v2 - installing pagination 
+```
 
 ## Project setup - back-end
 ```
