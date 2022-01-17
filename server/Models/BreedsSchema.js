@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require('mongoose-paginate-v2');
 const Schema = mongoose.Schema;
 // const { comments } = require("./models/CommentsSchema");
 
@@ -28,6 +29,7 @@ JasminSchema.add({
   comments: [commentsSchema],
 });
 
+JasminSchema.plugin(mongoosePaginate);
 
 const comments = mongoose.model("comments", commentsSchema);
 const Jasmin = mongoose.model("jasmins", JasminSchema);
@@ -36,3 +38,4 @@ module.exports = {
   Jasmin,
   comments,
 };
+
