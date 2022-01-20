@@ -193,4 +193,17 @@ form {
   border-radius: 5px;
   padding: 20px;
 }
+
+li {
+  display: inline-block;
+}
+
+ul {
+  text-align: center;
+  width: 100%;
+}
+
+.btn {
+  color: blue;
+}
 </style>
