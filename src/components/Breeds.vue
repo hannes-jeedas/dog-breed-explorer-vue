@@ -23,7 +23,20 @@
       </li>
     </ul>
   </div>
-  <!-- </div> -->
+ 
+  <ul id="pagination">
+  <li v-for="(page, index) in [...Array(totalpages)]" :key="index" @click="getbreeds(index + 1)">
+
+  <button 
+  class="btn mr-3 p-3"
+  :disabled="page === page"
+  >
+  {{ index + 1}}
+  </button>
+  
+  </li>
+</ul>
+
 </template>
 
 <script>
@@ -59,10 +72,13 @@ const totalpages = ref(1)
     getbreeds();
     return {
       breedsFromServer,
+      totalpages,
       getBreed,
+      getbreeds,
       gotoabout,
     };
   },
 };
 </script>
+
 
