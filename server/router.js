@@ -7,9 +7,10 @@ const authRoutes = require("./authenticate.router");
 router.use("/auth", authRoutes);
 
 router.post("/get-breeds", async function (breeds_request, breeds_response) {
+
   const options = {
     page: breeds_request.body.page || 1,
-    limit: 12,
+    limit: 18,
     projection: { Breed: 1 },
   };
   const result = await Jasmin.paginate({}, options);
