@@ -1,4 +1,29 @@
-# jasmin
+# Dog Breeds Explorer
+
+A full-stack web application for **viewing and searching dog breeds**, built with **Vue.js**, **Express.js**, and **MongoDB**.
+
+---
+
+## 🚀 Features
+
+- 🔎 Search for dog breeds by name  
+- 🐾 View detailed information about each breed  
+- 🖼️ Display images of breeds (optional integration)  
+- ⚡ Fast and responsive UI built with Vue 3  
+- 🌐 REST API backend using Express.js  
+- 🗄️ Breed data stored and managed via MongoDB  
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer     | Technology                                |
+|-----------|--------------------------------------------|
+| Frontend  | [Vue.js](https://vuejs.org/)               |
+| Backend   | [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/) |
+| Database  | [MongoDB](https://www.mongodb.com/) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) |
+| Dev Tools | nodemon, dotenv, axios, cors               |
+
 
 ## Project setup - front-end
 ```
@@ -51,3 +76,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
